@@ -1,0 +1,7 @@
+C:\Users\frank\source\repos\RevitApiCourse\bin\Debug\RevitApiCourse.dll
+C:\Users\frank\source\repos\RevitApiCourse\bin\Debug\RevitApiCourse.pdb
+C:\Users\frank\source\repos\RevitApiCourse\obj\Debug\RevitApiCourse.csproj.AssemblyReference.cache
+C:\Users\frank\source\repos\RevitApiCourse\obj\Debug\RevitApiCourse.csproj.CoreCompileInputs.cache
+C:\Users\frank\source\repos\RevitApiCourse\obj\Debug\RevitApiCourse.dll
+C:\Users\frank\source\repos\RevitApiCourse\obj\Debug\RevitApiCourse.pdb
+C:\Users\frank\source\repos\RevitApiCourse\bin\Debug\Utilities\RevitApiCourse.addin

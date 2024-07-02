@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>HelloBIMWorld</Name>
+		<FullClassName>RevitApiCourse.HelloBIMWorld</FullClassName>
+		<Text>HelloBIMWorld</Text>
+		<Description>Show a Hello BIM World message.</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>RevitApiCourse/RevitApiCourse.dll</Assembly>
+		<AddInId>AEEB4375-49C3-4937-8B41-4683B6EEB203</AddInId>
+		<VendorId>DevBIM</VendorId>
+		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>ShowElementInfo</Name>
+		<FullClassName>RevitApiCourse.Selection</FullClassName>
+		<Text>ShowElementInfo</Text>
+		<Description>Show a picked element name.</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>RevitApiCourse/RevitApiCourse.dll</Assembly>
+		<AddInId>B6A12BA5-7EF2-4DB8-989A-9C84182E2AC8</AddInId>
+		<VendorId>DevBIM</VendorId>
+		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
+	</AddIn>
+</RevitAddIns>

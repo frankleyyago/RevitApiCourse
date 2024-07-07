@@ -22,4 +22,15 @@
 		<VendorId>DevBIM</VendorId>
 		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
 	</AddIn>
+	<AddIn Type="Command">
+		<Name>CollectorAndFilter</Name>
+		<FullClassName>RevitApiCourse.CollectorAndFilter</FullClassName>
+		<Text>CollectorAndFilter</Text>
+		<Description>Count doors.</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>RevitApiCourse/RevitApiCourse.dll</Assembly>
+		<AddInId>D0237202-EC85-4D10-AECD-6380E84551C1</AddInId>
+		<VendorId>DevBIM</VendorId>
+		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
+	</AddIn>
 </RevitAddIns>

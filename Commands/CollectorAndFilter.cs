@@ -26,12 +26,12 @@ namespace RevitApiCourse
             _uidoc = _uiapp.ActiveUIDocument;
             _doc = _uidoc.Document;
 
-            CountDoors(FilterDoors());
+            CountElement(FilterWalls());
 
             return Result.Succeeded;
         }
 
-        #region
+        #region FilterDoors
         /// <summary>
         /// Filter doors in the model.
         /// </summary>
@@ -53,14 +53,39 @@ namespace RevitApiCourse
         }
         #endregion
 
-        #region
+        #region FilterWalls()
         /// <summary>
-        /// Counts the doors.
+        /// Filters walls
         /// </summary>
-        /// <param name="filteredDoors"></param>
-        public void CountDoors(IList<Element> filteredDoors)
+        /// <returns>filtered walls.</returns>
+        public IList<Element> FilterWalls()
         {
-            TaskDialog.Show("Doors", $"Total doors: {filteredDoors.Count}");
+            ElementId viewId = _doc.ActiveView.Id;
+
+            //create a collector.
+            FilteredElementCollector collector = new FilteredElementCollector(_doc, viewId);
+
+            //create a filter (wall).
+            ElementClassFilter filter = new ElementClassFilter(typeof(Wall));
+
+            //Narrow down the collector.
+            IList<Element> filteredWalls = collector
+                .WherePasses(filter)
+                .WhereElementIsNotElementType()
+                .ToElements();
+
+            return filteredWalls;
+        }
+        #endregion
+
+        #region CountElement
+        /// <summary>
+        /// Counts the elements.
+        /// </summary>
+        /// <param name="filteredElements">Elements amount</param>
+        public void CountElement(IList<Element> filteredElements)
+        {
+            TaskDialog.Show("Elements", $"Total element: {filteredElements.Count}");
         }
         #endregion
     }

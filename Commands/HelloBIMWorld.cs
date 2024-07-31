@@ -14,7 +14,7 @@ namespace RevitApiCourse
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
-            TaskDialog.Show("Hello", "Hello BIM World 2");
+            TaskDialog.Show("Hello", "Hello BIM World");
 
             return Result.Succeeded;
         }

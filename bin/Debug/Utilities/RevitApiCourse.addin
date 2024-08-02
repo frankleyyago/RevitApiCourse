@@ -33,4 +33,15 @@
 		<VendorId>DevBIM</VendorId>
 		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
 	</AddIn>
+	<AddIn Type="Command">
+		<Name>GetElementLocation</Name>
+		<FullClassName>RevitApiCourse.GetElementLocation</FullClassName>
+		<Text>GetElementLocation</Text>
+		<Description>Retrieve element XYZ coordinate.</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>RevitApiCourse/RevitApiCourse.dll</Assembly>
+		<AddInId>A91D2BCD-E44D-4402-ABE6-CAC0A0D2B176</AddInId>
+		<VendorId>DevBIM</VendorId>
+		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
+	</AddIn>
 </RevitAddIns>

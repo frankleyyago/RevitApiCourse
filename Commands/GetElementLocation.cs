@@ -27,7 +27,8 @@ namespace RevitApiCourse
             _uidoc = _uiapp.ActiveUIDocument;
             _doc = _uidoc.Document;
 
-            GetLocationPoint(PickMethod_PickObject());
+            //GetLocationPoint(PickMethod_PickObject());
+            GetLocationCurve(PickMethod_PickObject());
 
             return Result.Succeeded;
         }
@@ -61,6 +62,33 @@ namespace RevitApiCourse
             XYZ coord = locPoint.Point;
 
             TaskDialog.Show("Element location", $"Coord X:{coord.X}\n Coord Y:{coord.Y}\n Coord Z:{coord.Z}");
+        }
+        #endregion
+
+        #region GetLocationCurve
+        /// <summary>
+        /// Get picked element (wall) curve
+        /// </summary>
+        /// <param name="e">picked element</param>
+        public void GetLocationCurve(Element e)
+        {
+            string s = string.Empty;
+
+            //get element e location
+            Location elementLocation = e.Location;
+            //get element  location curve
+            LocationCurve locCurve = (LocationCurve)elementLocation;
+            //get locCurve curve
+            Curve crv = locCurve.Curve;
+
+            s += $"StartPoint X: {crv.GetEndPoint(0).X}\n";
+            s += $"StartPoint Y: {crv.GetEndPoint(0).Y}\n";
+            s += $"StartPoint Z: {crv.GetEndPoint(0).Z}\n";
+            s += $"EndPoint X: {crv.GetEndPoint(1).X}\n";
+            s += $"Endpoint Y: {crv.GetEndPoint(1).Y}\n";
+            s += $"Endpoint Z: {crv.GetEndPoint(1).Z}\n";
+
+            TaskDialog.Show("Curves", s);
         }
         #endregion
     }

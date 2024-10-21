@@ -44,4 +44,15 @@
 		<VendorId>DevBIM</VendorId>
 		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
 	</AddIn>
+	<AddIn Type="Command">
+		<Name>CreateTransaction</Name>
+		<FullClassName>RevitApiCourse.CreateTransaction</FullClassName>
+		<Text>CreateTransaction</Text>
+		<Description>Delete a picked element.</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>RevitApiCourse/RevitApiCourse.dll</Assembly>
+		<AddInId>247BAED8-0834-49B9-B40B-FFA51C62AE77</AddInId>
+		<VendorId>DevBIM</VendorId>
+		<VendorDescription>Youtube channel Yago Frankley | DevBIM</VendorDescription>
+	</AddIn>
 </RevitAddIns>

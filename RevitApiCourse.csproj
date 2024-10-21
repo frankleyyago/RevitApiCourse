@@ -53,6 +53,7 @@
     <Compile Include="Commands\HelloBIMWorld.cs" />
     <Compile Include="Commands\Selection.cs" />
     <Compile Include="Commands\GetElementLocation.cs" />
+    <Compile Include="Commands\CreateTransaction.cs" />
     <Compile Include="Commands\TemplateClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
